@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct practiceApp: App {
+struct crescendo_scouting_appApp: App {
     var body: some Scene {
         WindowGroup {
             FrontPageView()

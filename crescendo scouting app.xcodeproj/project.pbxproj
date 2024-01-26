@@ -11,13 +11,13 @@
 		D44BA2312B608D5100AA343B /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44BA2302B608D5100AA343B /* NotesView.swift */; };
 		D44BA2332B609E1800AA343B /* FrontPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44BA2322B609E1800AA343B /* FrontPageView.swift */; };
 		D47746572B5C861C00BE902A /* TeleopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47746562B5C861C00BE902A /* TeleopView.swift */; };
-		D4B14F132B5C44A300CF2AE6 /* practiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B14F122B5C44A300CF2AE6 /* practiceApp.swift */; };
+		D4B14F132B5C44A300CF2AE6 /* crescendo_scouting_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B14F122B5C44A300CF2AE6 /* crescendo_scouting_appApp.swift */; };
 		D4B14F152B5C44A300CF2AE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B14F142B5C44A300CF2AE6 /* ContentView.swift */; };
 		D4B14F172B5C44A700CF2AE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4B14F162B5C44A700CF2AE6 /* Assets.xcassets */; };
 		D4B14F1A2B5C44A700CF2AE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4B14F192B5C44A700CF2AE6 /* Preview Assets.xcassets */; };
-		D4B14F242B5C44A700CF2AE6 /* practiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B14F232B5C44A700CF2AE6 /* practiceTests.swift */; };
-		D4B14F2E2B5C44A800CF2AE6 /* practiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B14F2D2B5C44A800CF2AE6 /* practiceUITests.swift */; };
-		D4B14F302B5C44A800CF2AE6 /* practiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B14F2F2B5C44A800CF2AE6 /* practiceUITestsLaunchTests.swift */; };
+		D4B14F242B5C44A700CF2AE6 /* crescendo_scouting_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B14F232B5C44A700CF2AE6 /* crescendo_scouting_appTests.swift */; };
+		D4B14F2E2B5C44A800CF2AE6 /* crescendo_scouting_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B14F2D2B5C44A800CF2AE6 /* crescendo_scouting_appUITests.swift */; };
+		D4B14F302B5C44A800CF2AE6 /* crescendo_scouting_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B14F2F2B5C44A800CF2AE6 /* crescendo_scouting_appUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,16 +42,16 @@
 		D44BA2302B608D5100AA343B /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
 		D44BA2322B609E1800AA343B /* FrontPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontPageView.swift; sourceTree = "<group>"; };
 		D47746562B5C861C00BE902A /* TeleopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleopView.swift; sourceTree = "<group>"; };
-		D4B14F0F2B5C44A300CF2AE6 /* practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4B14F122B5C44A300CF2AE6 /* practiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practiceApp.swift; sourceTree = "<group>"; };
+		D4B14F0F2B5C44A300CF2AE6 /* crescendo scouting app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "crescendo scouting app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4B14F122B5C44A300CF2AE6 /* crescendo_scouting_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crescendo_scouting_appApp.swift; sourceTree = "<group>"; };
 		D4B14F142B5C44A300CF2AE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D4B14F162B5C44A700CF2AE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4B14F192B5C44A700CF2AE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D4B14F1F2B5C44A700CF2AE6 /* practiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = practiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4B14F232B5C44A700CF2AE6 /* practiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practiceTests.swift; sourceTree = "<group>"; };
-		D4B14F292B5C44A800CF2AE6 /* practiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = practiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4B14F2D2B5C44A800CF2AE6 /* practiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practiceUITests.swift; sourceTree = "<group>"; };
-		D4B14F2F2B5C44A800CF2AE6 /* practiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D4B14F1F2B5C44A700CF2AE6 /* crescendo scouting appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "crescendo scouting appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4B14F232B5C44A700CF2AE6 /* crescendo_scouting_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crescendo_scouting_appTests.swift; sourceTree = "<group>"; };
+		D4B14F292B5C44A800CF2AE6 /* crescendo scouting appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "crescendo scouting appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4B14F2D2B5C44A800CF2AE6 /* crescendo_scouting_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crescendo_scouting_appUITests.swift; sourceTree = "<group>"; };
+		D4B14F2F2B5C44A800CF2AE6 /* crescendo_scouting_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crescendo_scouting_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +82,9 @@
 		D4B14F062B5C44A300CF2AE6 = {
 			isa = PBXGroup;
 			children = (
-				D4B14F112B5C44A300CF2AE6 /* practice */,
-				D4B14F222B5C44A700CF2AE6 /* practiceTests */,
-				D4B14F2C2B5C44A800CF2AE6 /* practiceUITests */,
+				D4B14F112B5C44A300CF2AE6 /* crescendo scouting app */,
+				D4B14F222B5C44A700CF2AE6 /* crescendo_scouting_appTests */,
+				D4B14F2C2B5C44A800CF2AE6 /* crescendo_scouting_appUITests */,
 				D4B14F102B5C44A300CF2AE6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,17 +92,17 @@
 		D4B14F102B5C44A300CF2AE6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D4B14F0F2B5C44A300CF2AE6 /* practice.app */,
-				D4B14F1F2B5C44A700CF2AE6 /* practiceTests.xctest */,
-				D4B14F292B5C44A800CF2AE6 /* practiceUITests.xctest */,
+				D4B14F0F2B5C44A300CF2AE6 /* crescendo scouting app.app */,
+				D4B14F1F2B5C44A700CF2AE6 /* crescendo scouting appTests.xctest */,
+				D4B14F292B5C44A800CF2AE6 /* crescendo scouting appUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D4B14F112B5C44A300CF2AE6 /* practice */ = {
+		D4B14F112B5C44A300CF2AE6 /* crescendo scouting app */ = {
 			isa = PBXGroup;
 			children = (
-				D4B14F122B5C44A300CF2AE6 /* practiceApp.swift */,
+				D4B14F122B5C44A300CF2AE6 /* crescendo_scouting_appApp.swift */,
 				D44BA2322B609E1800AA343B /* FrontPageView.swift */,
 				D4B14F142B5C44A300CF2AE6 /* ContentView.swift */,
 				D47746562B5C861C00BE902A /* TeleopView.swift */,
@@ -111,7 +111,7 @@
 				D4B14F162B5C44A700CF2AE6 /* Assets.xcassets */,
 				D4B14F182B5C44A700CF2AE6 /* Preview Content */,
 			);
-			path = practice;
+			path = "crescendo scouting app";
 			sourceTree = "<group>";
 		};
 		D4B14F182B5C44A700CF2AE6 /* Preview Content */ = {
@@ -122,29 +122,29 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		D4B14F222B5C44A700CF2AE6 /* practiceTests */ = {
+		D4B14F222B5C44A700CF2AE6 /* crescendo_scouting_appTests */ = {
 			isa = PBXGroup;
 			children = (
-				D4B14F232B5C44A700CF2AE6 /* practiceTests.swift */,
+				D4B14F232B5C44A700CF2AE6 /* crescendo_scouting_appTests.swift */,
 			);
-			path = practiceTests;
+			path = crescendo_scouting_appTests;
 			sourceTree = "<group>";
 		};
-		D4B14F2C2B5C44A800CF2AE6 /* practiceUITests */ = {
+		D4B14F2C2B5C44A800CF2AE6 /* crescendo_scouting_appUITests */ = {
 			isa = PBXGroup;
 			children = (
-				D4B14F2D2B5C44A800CF2AE6 /* practiceUITests.swift */,
-				D4B14F2F2B5C44A800CF2AE6 /* practiceUITestsLaunchTests.swift */,
+				D4B14F2D2B5C44A800CF2AE6 /* crescendo_scouting_appUITests.swift */,
+				D4B14F2F2B5C44A800CF2AE6 /* crescendo_scouting_appUITestsLaunchTests.swift */,
 			);
-			path = practiceUITests;
+			path = crescendo_scouting_appUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D4B14F0E2B5C44A300CF2AE6 /* practice */ = {
+		D4B14F0E2B5C44A300CF2AE6 /* crescendo scouting app */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4B14F332B5C44A800CF2AE6 /* Build configuration list for PBXNativeTarget "practice" */;
+			buildConfigurationList = D4B14F332B5C44A800CF2AE6 /* Build configuration list for PBXNativeTarget "crescendo scouting app" */;
 			buildPhases = (
 				D4B14F0B2B5C44A300CF2AE6 /* Sources */,
 				D4B14F0C2B5C44A300CF2AE6 /* Frameworks */,
@@ -154,14 +154,14 @@
 			);
 			dependencies = (
 			);
-			name = practice;
+			name = "crescendo scouting app";
 			productName = practice;
-			productReference = D4B14F0F2B5C44A300CF2AE6 /* practice.app */;
+			productReference = D4B14F0F2B5C44A300CF2AE6 /* crescendo scouting app.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D4B14F1E2B5C44A700CF2AE6 /* practiceTests */ = {
+		D4B14F1E2B5C44A700CF2AE6 /* crescendo scouting appTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4B14F362B5C44A800CF2AE6 /* Build configuration list for PBXNativeTarget "practiceTests" */;
+			buildConfigurationList = D4B14F362B5C44A800CF2AE6 /* Build configuration list for PBXNativeTarget "crescendo scouting appTests" */;
 			buildPhases = (
 				D4B14F1B2B5C44A700CF2AE6 /* Sources */,
 				D4B14F1C2B5C44A700CF2AE6 /* Frameworks */,
@@ -172,14 +172,14 @@
 			dependencies = (
 				D4B14F212B5C44A700CF2AE6 /* PBXTargetDependency */,
 			);
-			name = practiceTests;
+			name = "crescendo scouting appTests";
 			productName = practiceTests;
-			productReference = D4B14F1F2B5C44A700CF2AE6 /* practiceTests.xctest */;
+			productReference = D4B14F1F2B5C44A700CF2AE6 /* crescendo scouting appTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D4B14F282B5C44A800CF2AE6 /* practiceUITests */ = {
+		D4B14F282B5C44A800CF2AE6 /* crescendo scouting appUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4B14F392B5C44A800CF2AE6 /* Build configuration list for PBXNativeTarget "practiceUITests" */;
+			buildConfigurationList = D4B14F392B5C44A800CF2AE6 /* Build configuration list for PBXNativeTarget "crescendo scouting appUITests" */;
 			buildPhases = (
 				D4B14F252B5C44A800CF2AE6 /* Sources */,
 				D4B14F262B5C44A800CF2AE6 /* Frameworks */,
@@ -190,9 +190,9 @@
 			dependencies = (
 				D4B14F2B2B5C44A800CF2AE6 /* PBXTargetDependency */,
 			);
-			name = practiceUITests;
+			name = "crescendo scouting appUITests";
 			productName = practiceUITests;
-			productReference = D4B14F292B5C44A800CF2AE6 /* practiceUITests.xctest */;
+			productReference = D4B14F292B5C44A800CF2AE6 /* crescendo scouting appUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -218,7 +218,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D4B14F0A2B5C44A300CF2AE6 /* Build configuration list for PBXProject "practice" */;
+			buildConfigurationList = D4B14F0A2B5C44A300CF2AE6 /* Build configuration list for PBXProject "crescendo scouting app" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -231,9 +231,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D4B14F0E2B5C44A300CF2AE6 /* practice */,
-				D4B14F1E2B5C44A700CF2AE6 /* practiceTests */,
-				D4B14F282B5C44A800CF2AE6 /* practiceUITests */,
+				D4B14F0E2B5C44A300CF2AE6 /* crescendo scouting app */,
+				D4B14F1E2B5C44A700CF2AE6 /* crescendo scouting appTests */,
+				D4B14F282B5C44A800CF2AE6 /* crescendo scouting appUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -273,7 +273,7 @@
 				D4B14F152B5C44A300CF2AE6 /* ContentView.swift in Sources */,
 				D44BA2312B608D5100AA343B /* NotesView.swift in Sources */,
 				D47746572B5C861C00BE902A /* TeleopView.swift in Sources */,
-				D4B14F132B5C44A300CF2AE6 /* practiceApp.swift in Sources */,
+				D4B14F132B5C44A300CF2AE6 /* crescendo_scouting_appApp.swift in Sources */,
 				D44BA2332B609E1800AA343B /* FrontPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4B14F242B5C44A700CF2AE6 /* practiceTests.swift in Sources */,
+				D4B14F242B5C44A700CF2AE6 /* crescendo_scouting_appTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,8 +290,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4B14F302B5C44A800CF2AE6 /* practiceUITestsLaunchTests.swift in Sources */,
-				D4B14F2E2B5C44A800CF2AE6 /* practiceUITests.swift in Sources */,
+				D4B14F302B5C44A800CF2AE6 /* crescendo_scouting_appUITestsLaunchTests.swift in Sources */,
+				D4B14F2E2B5C44A800CF2AE6 /* crescendo_scouting_appUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,12 +300,12 @@
 /* Begin PBXTargetDependency section */
 		D4B14F212B5C44A700CF2AE6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D4B14F0E2B5C44A300CF2AE6 /* practice */;
+			target = D4B14F0E2B5C44A300CF2AE6 /* crescendo scouting app */;
 			targetProxy = D4B14F202B5C44A700CF2AE6 /* PBXContainerItemProxy */;
 		};
 		D4B14F2B2B5C44A800CF2AE6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D4B14F0E2B5C44A300CF2AE6 /* practice */;
+			target = D4B14F0E2B5C44A300CF2AE6 /* crescendo scouting app */;
 			targetProxy = D4B14F2A2B5C44A800CF2AE6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -501,7 +501,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/practice.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/practice";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/crescendo scouting app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/crescendo scouting app";
 			};
 			name = Debug;
 		};
@@ -520,7 +520,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/practice.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/practice";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/crescendo scouting app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/crescendo scouting app";
 			};
 			name = Release;
 		};
@@ -561,7 +561,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D4B14F0A2B5C44A300CF2AE6 /* Build configuration list for PBXProject "practice" */ = {
+		D4B14F0A2B5C44A300CF2AE6 /* Build configuration list for PBXProject "crescendo scouting app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4B14F312B5C44A800CF2AE6 /* Debug */,
@@ -570,7 +570,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4B14F332B5C44A800CF2AE6 /* Build configuration list for PBXNativeTarget "practice" */ = {
+		D4B14F332B5C44A800CF2AE6 /* Build configuration list for PBXNativeTarget "crescendo scouting app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4B14F342B5C44A800CF2AE6 /* Debug */,
@@ -579,7 +579,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4B14F362B5C44A800CF2AE6 /* Build configuration list for PBXNativeTarget "practiceTests" */ = {
+		D4B14F362B5C44A800CF2AE6 /* Build configuration list for PBXNativeTarget "crescendo scouting appTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4B14F372B5C44A800CF2AE6 /* Debug */,
@@ -588,7 +588,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4B14F392B5C44A800CF2AE6 /* Build configuration list for PBXNativeTarget "practiceUITests" */ = {
+		D4B14F392B5C44A800CF2AE6 /* Build configuration list for PBXNativeTarget "crescendo scouting appUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4B14F3A2B5C44A800CF2AE6 /* Debug */,
