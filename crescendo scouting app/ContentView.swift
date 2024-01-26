@@ -14,6 +14,7 @@ let redAmp = "red amp"
 let chain = "chain"
 
 let backgroundGradient = LinearGradient(colors: [Color.blue, Color.white], startPoint: .top, endPoint: .bottom)
+//let redBackgroundGradient = LinearGradient(colors: [Color.red, Color.white], startPoint: : .top, endPoint: .bottom)
 struct ContentView: View {
     @State private var value = 0;
     @State private var amp = 0;
