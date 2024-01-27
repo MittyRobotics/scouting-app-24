@@ -49,7 +49,7 @@ struct ContentView: View {
                                     Text("SPEAKER").font(.title).fontWeight(.bold).font(.system(.largeTitle))
                                     Image(blueSpeaker).resizable().frame(width:318, height: 318).padding(.bottom, 10)
                                     Stepper {
-                                        Text("\(value)")
+                                        Text("\(value)").font(.system(size: 30))
                                     } onIncrement: {
                                         value += 1
                                         
@@ -64,7 +64,7 @@ struct ContentView: View {
                                     Text("AMP").font(.title).fontWeight(.bold).font(.system(.largeTitle))
                                     Image(blueAmp).resizable().frame(width:318, height: 318).padding(.bottom, 10)
                                     Stepper {
-                                        Text("\(amp)")
+                                        Text("\(amp)").font(.system(size: 30))
                                     } onIncrement: {
                                         amp += 1
                                         

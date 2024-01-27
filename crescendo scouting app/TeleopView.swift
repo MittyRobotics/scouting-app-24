@@ -50,7 +50,7 @@ struct TeleopView: View {
                                     Text("SPEAKER").font(.title).fontWeight(.bold).font(.system(.largeTitle))
                                     Image(blueSpeaker).resizable().frame(width:318, height: 318).padding(.bottom, 10)
                                     Stepper {
-                                        Text("\(teleopSpeaker)")
+                                        Text("\(teleopSpeaker)").font(.system(size: 30))
                                     } onIncrement: {
                                         teleopSpeaker += 1
                                         
@@ -65,7 +65,7 @@ struct TeleopView: View {
                                     Text("AMP").font(.title).fontWeight(.bold).font(.system(.largeTitle))
                                     Image(blueAmp).resizable().frame(width:318, height: 318).padding(.bottom, 10)
                                     Stepper {
-                                        Text("\(teleopAmp)")
+                                        Text("\(teleopAmp)").font(.system(size: 30))
                                     } onIncrement: {
                                         teleopAmp += 1
                                         
