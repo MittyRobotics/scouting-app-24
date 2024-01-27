@@ -14,26 +14,31 @@ let redAmp = "red amp"
 let chain = "chain"
 
 let backgroundGradient = LinearGradient(colors: [Color.blue, Color.white], startPoint: .top, endPoint: .bottom)
-//let redBackgroundGradient = LinearGradient(colors: [Color.red, Color.white], startPoint: : .top, endPoint: .bottom)
+let redBackgroundGradient = LinearGradient(colors: [Color.red, Color.white], startPoint: .top, endPoint: .bottom)
 struct ContentView: View {
     @State private var value = 0;
     @State private var amp = 0;
     @State private var mobile = false;
+    @Binding var red: String
     @State private var left = false;
     @State private var middle = false;
     @State private var move = true;
     @State private var jank = true;
+    @Binding var teamNum: String;
+    @Binding var matchnum: String;
+    @Binding var startingPosition: String;
     var body: some View {
         if !jank{
             FrontPageView()
         }
         else{
             if !move{
-                TeleopView()
+                TeleopView(red: $red, teamNum: $teamNum, matchnum: $matchnum, mobile: $mobile, startingPosition: $startingPosition, value: $value, amp: $amp, left: $left, middle: $middle)
             } else{
                 GeometryReader {geometry in
                     ZStack {//could make an array
-                    backgroundGradient
+                        red  == "Red" ? redBackgroundGradient : backgroundGradient
+                            //i lvoe string comparison rather than bpassing in boiolean expression
                         Image(systemName: "arrow.left").font(.title).offset(y: -60).fontWeight(.bold).frame(maxWidth:.infinity, maxHeight:.infinity,  alignment:.topLeading).padding(.horizontal, 50).padding(.vertical, 100).onTapGesture {
                         jank = false
                         }
@@ -92,6 +97,6 @@ struct ContentView: View {
     }
 }
 
-#Preview {
-    ContentView()
-}
+//#Preview {
+//    ContentView(red: self.$red)
+//}

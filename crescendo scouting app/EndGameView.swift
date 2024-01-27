@@ -11,6 +11,19 @@ struct EndGameView: View {
     @State private var jank = true
     @State private var progref = true;
     @State private var selection = "Parked";
+    
+    @Binding var red: String;
+    @Binding var teamNum: String;
+    @Binding var matchnum: String;
+    @Binding var mobile: Bool;
+    @Binding var startingPosition: String;
+    @Binding var value: Int;
+    @Binding var amp: Int;
+    @Binding var left: Bool;
+    @Binding var middle: Bool;
+    @Binding var teleopSpeaker: Int;
+    @Binding var teleopAmp: Int;
+    
     @State private var trap = false;
     @State private var harmony = false;
     let positions = ["Parked", "Onstage", "None"];
@@ -18,15 +31,15 @@ struct EndGameView: View {
     var body: some View {
         //update loop reference
         if !jank {
-            TeleopView()
+            TeleopView(red: $red, teamNum: $teamNum, matchnum: $matchnum, mobile: $mobile, startingPosition: $startingPosition, value: $value, amp: $amp, left: $left, middle: $middle)
         } else {
             if !progref {
-                NotesView()
+                NotesView(red: $red, teamNum: $teamNum, matchnum: $matchnum, mobile: $mobile, startingPosition: $startingPosition, value: $value, amp: $amp, left: $left, middle: $middle, teleopSpeaker: $teleopSpeaker, teleopAmp: $teleopAmp, selection: $selection, trap: $trap, harmony: $harmony)
             } else {
                 //code goes here
                 GeometryReader {geometry in
                     ZStack {//could make an array
-                        backgroundGradient
+                        red  == "Red" ? redBackgroundGradient : backgroundGradient
                         VStack {
                             ZStack {
                                 Text("END GAME").font(.title).fontWeight(.bold).font(.system(.largeTitle))
@@ -79,6 +92,9 @@ struct EndGameView: View {
     }
 }
 
-#Preview {
-    EndGameView()
-}
+//#Preview {
+//    EndGameView()
+//}
+
+
+

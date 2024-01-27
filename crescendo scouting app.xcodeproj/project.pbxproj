@@ -10,7 +10,9 @@
 		D44BA22F2B608CB000AA343B /* EndGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44BA22E2B608CB000AA343B /* EndGameView.swift */; };
 		D44BA2312B608D5100AA343B /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44BA2302B608D5100AA343B /* NotesView.swift */; };
 		D44BA2332B609E1800AA343B /* FrontPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44BA2322B609E1800AA343B /* FrontPageView.swift */; };
+		D46E3AFC2B6486E8007769E2 /* suss.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46E3AFB2B6486E8007769E2 /* suss.swift */; };
 		D47746572B5C861C00BE902A /* TeleopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47746562B5C861C00BE902A /* TeleopView.swift */; };
+		D4A569952B65874D00C16D46 /* ExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A569942B65874D00C16D46 /* ExportView.swift */; };
 		D4B14F132B5C44A300CF2AE6 /* crescendo_scouting_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B14F122B5C44A300CF2AE6 /* crescendo_scouting_appApp.swift */; };
 		D4B14F152B5C44A300CF2AE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B14F142B5C44A300CF2AE6 /* ContentView.swift */; };
 		D4B14F172B5C44A700CF2AE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4B14F162B5C44A700CF2AE6 /* Assets.xcassets */; };
@@ -41,7 +43,9 @@
 		D44BA22E2B608CB000AA343B /* EndGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameView.swift; sourceTree = "<group>"; };
 		D44BA2302B608D5100AA343B /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
 		D44BA2322B609E1800AA343B /* FrontPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontPageView.swift; sourceTree = "<group>"; };
+		D46E3AFB2B6486E8007769E2 /* suss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suss.swift; sourceTree = "<group>"; };
 		D47746562B5C861C00BE902A /* TeleopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleopView.swift; sourceTree = "<group>"; };
+		D4A569942B65874D00C16D46 /* ExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportView.swift; sourceTree = "<group>"; };
 		D4B14F0F2B5C44A300CF2AE6 /* crescendo scouting app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "crescendo scouting app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4B14F122B5C44A300CF2AE6 /* crescendo_scouting_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crescendo_scouting_appApp.swift; sourceTree = "<group>"; };
 		D4B14F142B5C44A300CF2AE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,8 +112,10 @@
 				D47746562B5C861C00BE902A /* TeleopView.swift */,
 				D44BA22E2B608CB000AA343B /* EndGameView.swift */,
 				D44BA2302B608D5100AA343B /* NotesView.swift */,
+				D4A569942B65874D00C16D46 /* ExportView.swift */,
 				D4B14F162B5C44A700CF2AE6 /* Assets.xcassets */,
 				D4B14F182B5C44A700CF2AE6 /* Preview Content */,
+				D46E3AFB2B6486E8007769E2 /* suss.swift */,
 			);
 			path = "crescendo scouting app";
 			sourceTree = "<group>";
@@ -271,6 +277,8 @@
 			files = (
 				D44BA22F2B608CB000AA343B /* EndGameView.swift in Sources */,
 				D4B14F152B5C44A300CF2AE6 /* ContentView.swift in Sources */,
+				D4A569952B65874D00C16D46 /* ExportView.swift in Sources */,
+				D46E3AFC2B6486E8007769E2 /* suss.swift in Sources */,
 				D44BA2312B608D5100AA343B /* NotesView.swift in Sources */,
 				D47746572B5C861C00BE902A /* TeleopView.swift in Sources */,
 				D4B14F132B5C44A300CF2AE6 /* crescendo_scouting_appApp.swift in Sources */,

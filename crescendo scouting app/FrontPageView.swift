@@ -10,7 +10,7 @@ import SwiftUI
 struct FrontPageView: View {
     @State private var moved = false;
     @State public var selection = "Red";
-    @State public var matchNum = "";
+    @State public var matchnum = "";
     @State public var startingPosition = "1";
     @State public var teamNum = "";
     let teamColor = ["Red", "Blue"];
@@ -37,7 +37,7 @@ struct FrontPageView: View {
                             .minimumScaleFactor(4)
                             .offset(y: -80)
                         
-                        TextField("Match # (required)", text: $matchNum).multilineTextAlignment(.center)
+                        TextField("Match # (required)", text: $matchnum).multilineTextAlignment(.center)
                             .foregroundColor(.blue)
                             .font(.system(size:25))
                             .monospacedDigit()
@@ -50,26 +50,26 @@ struct FrontPageView: View {
                             ForEach(startingPositions, id: \.self){
                                 Text($0)
                             }
-                        }.pickerStyle(.menu).multilineTextAlignment(.center).fixedSize().font(.title3)
+                        }.pickerStyle(.menu).multilineTextAlignment(.center).fixedSize().font(.title3)  
                         
                     }
                     
-                    var showDetails = false;
-                    if (!String(teamNum).isEmpty && !String(matchNum).isEmpty){
+                    //var showDetails = false;
+                    if (!String(teamNum).isEmpty && !String(matchnum).isEmpty){
                         HStack{
                             Text("TO AUTON").font(.title).fontWeight(.bold).onTapGesture {
                                 moved = true;
                             }
-                        }.offset(y: 50)
+                        }.offset(y: -20)
                     }
                 }
             }
         }
         else{
-            ContentView()
+            ContentView(red: $selection, teamNum: $teamNum, matchnum: $matchnum, startingPosition: $startingPosition)
         }
     }
-}
+} //llvm reference
 
 #Preview {
     FrontPageView()
