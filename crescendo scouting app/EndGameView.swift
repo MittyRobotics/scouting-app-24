@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct EndGameView: View {
+    
     @State private var jank = true
     @State private var progref = true;
-    @State private var selection = "Parked";
     
     @Binding var red: String;
-    @Binding var teamNum: String;
+    @Binding var teamNum : String;
     @Binding var matchnum: String;
     @Binding var mobile: Bool;
     @Binding var startingPosition: String;
@@ -23,18 +23,27 @@ struct EndGameView: View {
     @Binding var middle: Bool;
     @Binding var teleopSpeaker: Int;
     @Binding var teleopAmp: Int;
+    @Binding var selection: String; //editing teh ast
+    @Binding var trap: Bool;
+    @Binding var harmony: Bool;
+    @Binding var pens: Int;
+    @Binding var techPens: Int;
+    @Binding var groundpickup: Bool;
+    @Binding var feeder: Bool;
+    @Binding var notes: String;
     
-    @State private var trap = false;
-    @State private var harmony = false;
+    
+    
     let positions = ["Parked", "Onstage", "None"];
     
     var body: some View {
         //update loop reference
         if !jank {
-            TeleopView(red: $red, teamNum: $teamNum, matchnum: $matchnum, mobile: $mobile, startingPosition: $startingPosition, value: $value, amp: $amp, left: $left, middle: $middle)
+            TeleopView(red: $red, teamNum: $teamNum, matchnum: $matchnum, mobile: $mobile, startingPosition: $startingPosition, value: $value, amp: $amp, left: $left, middle: $middle, teleopSpeaker: $teleopSpeaker, teleopAmp: $teleopAmp, selection: $selection, trap: $trap, harmony: $harmony, pens: $pens, techPens: $techPens, groundpickup: $groundpickup, feeder: $feeder, notes: $notes)
+            
         } else {
             if !progref {
-                NotesView(red: $red, teamNum: $teamNum, matchnum: $matchnum, mobile: $mobile, startingPosition: $startingPosition, value: $value, amp: $amp, left: $left, middle: $middle, teleopSpeaker: $teleopSpeaker, teleopAmp: $teleopAmp, selection: $selection, trap: $trap, harmony: $harmony)
+                NotesView(red: $red, teamNum: $teamNum, matchnum: $matchnum, mobile: $mobile, startingPosition: $startingPosition, value: $value, amp: $amp, left: $left, middle: $middle, teleopSpeaker: $teleopSpeaker, teleopAmp: $teleopAmp, selection: $selection, trap: $trap, harmony: $harmony, pens: $pens, techPens: $techPens, groundpickup: $groundpickup, feeder: $feeder, notes: $notes)
             } else {
                 //code goes here
                 GeometryReader {geometry in
@@ -63,15 +72,15 @@ struct EndGameView: View {
                                     VStack{
                                         Picker("Select position", selection: $selection){
                                             ForEach(positions, id: \.self){
-                                                Text($0)
+                                                Text($0).font(.system(size: 18))
                                             }
                                         }
                                         .pickerStyle(.menu)
                                         
-                                        Text("Selected position: \(selection)")
+                                        Text("Selected position: \(selection)").font(.system(size: 20))
                                         
-                                        Toggle("Note in Trap?: ", isOn: $trap).frame(width:150).offset(y: 50)
-                                        Toggle("Harmony?: ", isOn: $harmony).frame(width:150).offset(y: 50)
+                                        Toggle("Note in Trap?: ", isOn: $trap).frame(width:200).offset(y: 50).font(.system(size: 22))
+                                        Toggle("Harmony?: ", isOn: $harmony).frame(width:200).offset(y: 50).font(.system(size: 22))
                                     }
                                 }
                             }.offset(y: -300)

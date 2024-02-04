@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct TeleopView: View {
-    @State private var teleopSpeaker = 0;
-    @State private var teleopAmp = 0;
     @State private var jank = true
     @State private var move = false;
     @State private var progref = true;
@@ -23,17 +21,26 @@ struct TeleopView: View {
     @Binding var amp: Int;
     @Binding var left: Bool;
     @Binding var middle: Bool;
-    
+    @Binding var teleopSpeaker: Int;
+    @Binding var teleopAmp: Int;
+    @Binding var selection: String;
+    @Binding var trap: Bool;
+    @Binding var harmony: Bool;
+    @Binding var pens: Int;
+    @Binding var techPens: Int;
+    @Binding var groundpickup: Bool;
+    @Binding var feeder: Bool;
+    @Binding var notes: String;
     var body: some View {
         //update loop reference
         if !jank {
-            ContentView(red: $red, teamNum: $teamNum, matchnum: $matchnum, startingPosition: $startingPosition)
+            ContentView(red: $red, teamNum: $teamNum, matchnum: $matchnum, mobile: $mobile, startingPosition: $startingPosition, value: $value, amp: $amp, left: $left, middle: $middle, teleopSpeaker: $teleopSpeaker, teleopAmp: $teleopAmp, selection: $selection, trap: $trap, harmony: $harmony, pens: $pens, techPens: $techPens, groundpickup: $groundpickup, feeder: $feeder, notes: $notes)
         } else {
             if !progref {
-                EndGameView(red: $red, teamNum: $teamNum, matchnum: $matchnum, mobile: $mobile, startingPosition: $startingPosition, value: $value, amp: $amp, left: $left, middle: $middle, teleopSpeaker: $teleopSpeaker, teleopAmp: $teleopAmp)
+                EndGameView(red: $red, teamNum: $teamNum, matchnum: $matchnum, mobile: $mobile, startingPosition: $startingPosition, value: $value, amp: $amp, left: $left, middle: $middle, teleopSpeaker: $teleopSpeaker, teleopAmp: $teleopAmp, selection: $selection, trap: $trap, harmony: $harmony, pens: $pens, techPens: $techPens, groundpickup: $groundpickup, feeder: $feeder, notes: $notes)
             } else {
                 //code goes here
-                GeometryReader {geometry in
+                GeometryReader { geo in
                     ZStack {//could make an array
                         red  == "Red" ? redBackgroundGradient : backgroundGradient
                         VStack {

@@ -12,7 +12,7 @@ struct NotesView: View {
     @State public var userName = "";
     
     @Binding var red: String;
-    @Binding var teamNum: String;
+    @Binding var teamNum : String;
     @Binding var matchnum: String;
     @Binding var mobile: Bool;
     @Binding var startingPosition: String;
@@ -25,18 +25,19 @@ struct NotesView: View {
     @Binding var selection: String;
     @Binding var trap: Bool;
     @Binding var harmony: Bool;
+    @Binding var pens: Int;
+    @Binding var techPens: Int;
+    @Binding var groundpickup: Bool;
+    @Binding var feeder: Bool;
+    @Binding var notes: String;
 
     @State private var jank = true; //jank
     @State private var progref = true;
-    @State public var pens: Int = 0;
-    @State public var techPens: Int = 0;
-    @State public var groundpickup = false;
-    @State public var feeder = false;
-    @State public var notes = "";
+    
     
     var body: some View {
         if !jank {
-            EndGameView(red: $red, teamNum: $teamNum, matchnum: $matchnum, mobile: $mobile, startingPosition: $startingPosition, value: $value, amp: $amp, left: $left, middle: $middle, teleopSpeaker: $teleopSpeaker, teleopAmp: $teleopAmp)
+            EndGameView(red: $red, teamNum: $teamNum, matchnum: $matchnum, mobile: $mobile, startingPosition: $startingPosition, value: $value, amp: $amp, left: $left, middle: $middle, teleopSpeaker: $teleopSpeaker, teleopAmp: $teleopAmp, selection: $selection, trap: $trap, harmony: $harmony, pens: $pens, techPens: $techPens, groundpickup: $groundpickup, feeder: $feeder, notes: $notes)
         }
         else{
             if (!progref){
@@ -53,9 +54,9 @@ struct NotesView: View {
                         
                         TextField("Your name (required): ", text:$userName).frame(width:400).padding(20)
                         
-                        Toggle("Defense?: ", isOn: $defending).frame(width:400)
-                        Toggle("Picked up from Ground?: ", isOn: $groundpickup).frame(width:400)
-                        Toggle("Feeder?: ", isOn: $feeder).frame(width:400)
+                        Toggle("Defense? ", isOn: $defending).frame(width:400)
+                        Toggle("Picked up from Ground? ", isOn: $groundpickup).frame(width:400)
+                        Toggle("Feeder? ", isOn: $feeder).frame(width:400)
                         
                         VStack{
                             Stepper{

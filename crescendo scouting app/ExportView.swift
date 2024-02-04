@@ -58,13 +58,13 @@ struct ExportView: View {
 
     var tt: String{
         get{
-            return "YOURNAME: " + userName + "\nTEAMNUM: " + teamNum + "\nTEAMCOLOR: " + red + "\nMATCHNUM: " + matchnum + "\nMOVINGAUTON: " + String(mobile) + "\nDEFENDING: " + String(defending) + "\nSTARTINGPOS: " + startingPosition + "\nAUTONSPEAKER: " + String(value) + "\nAUTONAMP: " + String(amp) + "\nLEFTSTARTINGZONE: " + String(left) + "\nMIDDLERING: " + String(middle) + "\nTELEOPSPEAKER: " + String(teleopSpeaker) + "\nTELEOPAMP: " + String(teleopAmp) + "\nPARK: " + selection + "\nTRAP: " + String(trap) + "\nHARMONY: " + String(harmony) + "\nGROUNDPICKUP: " + String(groundpickup) + "\nFEEDER: " + String(feeder) + "\nPENALTIES: " + String(pens) + "\nTECHPENALTIES: " + String(techPens) + "\nNOTES: " + notes
+            return "YOURNAME: " + userName + "\nTEAMNUM: " + teamNum + "\nMATCHNUM_TEAMNUM: " + matchnum + "_" + teamNum + "\nMATCHNUM: " + matchnum + "\nMOBILITY: " + String(mobile) + "\nDEFENDING: " + String(defending) + "\nSTARTINGPOS: " + startingPosition + "\nAUTONSPEAKER: " + String(value) + "\nAUTONAMP: " + String(amp) + "\nCENTERRING: " + String(middle) + "\nTELEOPSPEAKER: " + String(teleopSpeaker) + "\nTELEOPAMP: " + String(teleopAmp) + "\nENDGAME: " + selection + "\nTRAP: " + String(trap) + "\nHARMONY: " + String(harmony) + "\nGROUNDPICKUP: " + String(groundpickup) + "\nFEEDER: " + String(feeder) + "\nPENALTIES: " + String(pens) + "\nTECHPENALTIES: " + String(techPens) + "\nNOTES: " + notes
         }
     }
     
     var document: MessageDocument{
         get{
-            return MessageDocument(message: "YOURNAME: " + userName + "\nTEAMNUM: " + teamNum + "\nTEAMCOLOR: " + red + "\nMATCHNUM: " + matchnum + "\nMOVINGAUTON: " + String(mobile) + "\nDEFENDING: " + String(defending) + "\nSTARTINGPOS: " + startingPosition + "\nAUTONSPEAKER: " + String(value) + "\nAUTONAMP: " + String(amp) + "\nLEFTSTARTINGZONE: " + String(left) + "\nMIDDLERING: " + String(middle) + "\nTELEOPSPEAKER: " + String(teleopSpeaker) + "\nTELEOPAMP: " + String(teleopAmp) + "\nPARK: " + selection + "\nTRAP: " + String(trap) + "\nHARMONY: " + String(harmony) + "\nGROUNDPICKUP: " + String(groundpickup) + "\nFEEDER: " + String(feeder) + "\nPENALTIES: " + String(pens) + "\nTECHPENALTIES: " + String(techPens) + "\nNOTES: " + notes)
+            return MessageDocument(message: "YOURNAME: " + userName + "\nTEAMNUM: " + teamNum + "\nMATCHNUM_TEAMNUM: " + matchnum + "_" + teamNum + "\nMATCHNUM: " + matchnum + "\nMOBILITY: " + String(mobile) + "\nDEFENDING: " + String(defending) + "\nSTARTINGPOS: " + startingPosition + "\nAUTONSPEAKER: " + String(value) + "\nAUTONAMP: " + String(amp) + "\nCENTERRING: " + String(middle) + "\nTELEOPSPEAKER: " + String(teleopSpeaker) + "\nTELEOPAMP: " + String(teleopAmp) + "\nENDGAME: " + selection + "\nTRAP: " + String(trap) + "\nHARMONY: " + String(harmony) + "\nGROUNDPICKUP: " + String(groundpickup) + "\nFEEDER: " + String(feeder) + "\nPENALTIES: " + String(pens) + "\nTECHPENALTIES: " + String(techPens) + "\nNOTES: " + notes)
         }
     }
     
@@ -75,7 +75,7 @@ struct ExportView: View {
     var body: some View {
         if !sillious {
             if !jank{
-                NotesView(red: $red, teamNum: $teamNum, matchnum: $matchnum, mobile: $mobile, startingPosition: $startingPosition, value: $value, amp: $amp, left: $left, middle: $middle, teleopSpeaker: $teleopSpeaker, teleopAmp: $teleopAmp, selection: $selection, trap: $trap, harmony: $harmony)
+                NotesView(red: $red, teamNum: $teamNum, matchnum: $matchnum, mobile: $mobile, startingPosition: $startingPosition, value: $value, amp: $amp, left: $left, middle: $middle, teleopSpeaker: $teleopSpeaker, teleopAmp: $teleopAmp, selection: $selection, trap: $trap, harmony: $harmony, pens: $pens, techPens: $techPens, groundpickup: $groundpickup, feeder: $feeder, notes: $notes)
             } else{
                 Image(systemName: "arrow.left").font(.title).fontWeight(.bold).frame(maxWidth:.infinity, maxHeight:.infinity,  alignment:.topLeading).padding(.horizontal, 50).padding(.vertical, 20).onTapGesture {
                     jank = false
@@ -89,12 +89,11 @@ struct ExportView: View {
                                 Text("Export").font(.system(size:20, weight: .bold))
                             })
                             Spacer()
-   
                         }
-                    }
+                    }.offset(y:-40)
                     Button("To Starting Page", action: {
                         show = true
-                    }).font(.system(size: 40, weight: .bold)).foregroundColor(.blue).alert(isPresented: $show) {
+                    }).offset(y:-40).font(.system(size: 35, weight: .bold)).foregroundColor(.blue).alert(isPresented: $show) {
                         Alert(title: Text("U sure bro?"),
                               message: Text("You're gonna lose your data if you leave bro"),
                               primaryButton: .destructive(Text("yea im sure"), action: {
