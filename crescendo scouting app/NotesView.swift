@@ -50,12 +50,11 @@ struct NotesView: View {
                         jank = false
                     }
                     VStack {
-                        Text("NOTES:")
+                        Text("COMMENTS:")
                         
                         TextField("Your name (required): ", text:$userName).frame(width:400).padding(20)
                         
                         Toggle("Defense? ", isOn: $defending).frame(width:400)
-                        Toggle("Picked up from Ground? ", isOn: $groundpickup).frame(width:400)
                         Toggle("Feeder? ", isOn: $feeder).frame(width:400)
                         
                         VStack{
@@ -76,7 +75,7 @@ struct NotesView: View {
                             }
                         }.frame(width: 400).padding(20)
                         
-                        TextField("Notes:", text:$notes).frame(width:400).padding(20)
+                        TextField("Comments:", text:$notes).frame(width:400).padding(20)
                             //.padding(EdgeInsets(top:50, leading:25, bottom:50, trailing:25))
                         
                         

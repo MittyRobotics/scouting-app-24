@@ -55,35 +55,55 @@ struct TeleopView: View {
                             HStack {
                                 VStack {
                                     Text("SPEAKER").font(.title).fontWeight(.bold).font(.system(.largeTitle))
-                                    Image(blueSpeaker).resizable().frame(width:318, height: 318).padding(.bottom, 10)
-                                    Stepper {
-                                        Text("\(teleopSpeaker)").font(.system(size: 30))
-                                    } onIncrement: {
-                                        teleopSpeaker += 1
-                                        
-                                    } onDecrement: {
-                                        if (teleopSpeaker > 0) {
-                                            teleopSpeaker -= 1
+                                    Image(blueSpeaker).resizable().frame(width:218, height: 218).padding(.bottom, 10)
+                                    VStack{
+                                        Text("\(teleopSpeaker)").font(.system(size:30)).fontWeight(.bold).padding(15)
+                                        HStack{
+                                            HStack{
+                                                Text("-").foregroundColor(.white).font(.system(size:50)).padding(20).padding(.leading, 100).padding(.trailing, 100)
+                                            }.background(Color.red).border(.black).contentShape(Rectangle()).onTapGesture {
+                                                if (teleopSpeaker > 0){
+                                                    teleopSpeaker -= 1;
+                                                }
+                                            }
+                                            HStack{
+                                                Text("+").foregroundColor(.white).font(.system(size:50)).padding(20).padding(.leading, 100).padding(.trailing, 100)
+                                            }.background(Color.green).border(.black).contentShape(Rectangle()).onTapGesture {
+                                                teleopSpeaker += 1;
+                                            }
                                         }
-                                    }.frame(width:150)
+                                    }
                                 }
                                 .padding(10)
                                 VStack(spacing: 10) {
                                     Text("AMP").font(.title).fontWeight(.bold).font(.system(.largeTitle))
-                                    Image(blueAmp).resizable().frame(width:318, height: 318).padding(.bottom, 10)
-                                    Stepper {
-                                        Text("\(teleopAmp)").font(.system(size: 30))
-                                    } onIncrement: {
-                                        teleopAmp += 1
-                                        
-                                    } onDecrement: {
-                                        if (teleopAmp > 0) {
-                                            teleopAmp -= 1
+                                    Image(blueAmp).resizable().frame(width:218, height:218).padding(.bottom, 10)
+                                    VStack{
+                                        Text("\(teleopAmp)").font(.system(size:30)).fontWeight(.bold).padding(15)
+                                        HStack{
+                                            HStack{
+                                                Text("-").foregroundColor(.white).font(.system(size:50)).padding(20).padding(.leading, 100).padding(.trailing, 100)
+                                            }.background(Color.red).border(.black).contentShape(Rectangle()).onTapGesture {
+                                                if (teleopAmp > 0){
+                                                    teleopAmp -= 1;
+                                                }
+                                            }
+                                            HStack{
+                                                Text("+").foregroundColor(.white).font(.system(size:50)).padding(20).padding(.leading, 100).padding(.trailing, 100)
+                                            }.background(Color.green).border(.black).contentShape(Rectangle()).onTapGesture {
+                                                teleopAmp += 1;
+                                            }
                                         }
-                                    }.frame(width:150)
+                                    }
                                 }
                                 .padding(20)
                             }.offset(y:-100)
+                            
+                            HStack{
+                                VStack{
+                                    Toggle("Picked up from Ground? ", isOn: $groundpickup).frame(width:300).font(.system(size: 22))
+                                }
+                            }.offset(y:-75)
                             
                             HStack {
                                 Text("TO END GAME").font(.title).fontWeight(.bold).onTapGesture {

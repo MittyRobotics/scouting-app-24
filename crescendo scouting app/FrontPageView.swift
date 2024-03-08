@@ -32,7 +32,7 @@ struct FrontPageView: View {
     
     
     let teamColor = ["Red", "Blue"];
-    let startingPositions = ["1", "2,", "3", "4", "No show"];
+    let startingPositions = ["1", "2", "3", "4", "No show"];
      
     var body: some View {
         if !moved{

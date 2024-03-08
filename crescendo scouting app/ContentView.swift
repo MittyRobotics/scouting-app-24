@@ -77,34 +77,47 @@ struct ContentView: View {
                             HStack {
                                 VStack() {
                                     Text("SPEAKER").font(.title).fontWeight(.bold).font(.system(.largeTitle))
-                                    Image(blueSpeaker).resizable().frame(width:318, height: 318).padding(.bottom, 10)
-                                    Stepper {
-                                        Text("\(value)").font(.system(size: 30))
-                                    } onIncrement: {
-                                        value += 1
-                                        
-                                    } onDecrement: {
-                                        if (value > 0) {
-                                            value -= 1
+                                    Image(blueSpeaker).resizable().frame(width:218, height: 218).padding(.bottom, 10)
+                                    VStack{
+                                        Text("\(value)").font(.system(size:30)).fontWeight(.bold).padding(15)
+                                        HStack{
+                                            HStack{
+                                                Text("-").foregroundColor(.white).font(.system(size:50)).padding(20).padding(.leading, 100).padding(.trailing, 100)
+                                            }.background(Color.red).border(.black).contentShape(Rectangle()).onTapGesture {
+                                                if (value > 0){
+                                                    value -= 1;
+                                                }
+                                            }
+                                            HStack{
+                                                Text("+").foregroundColor(.white).font(.system(size:50)).padding(20).padding(.leading, 100).padding(.trailing, 100)
+                                            }.background(Color.green).border(.black).contentShape(Rectangle()).onTapGesture {
+                                                value += 1;
+                                            }
                                         }
-                                    }.frame(width:150)
+                                    }
                                 }
                                 .padding(10)
                                 VStack(spacing: 10) {
                                     Text("AMP").font(.title).fontWeight(.bold).font(.system(.largeTitle))
-                                    Image(blueAmp).resizable().frame(width:318, height: 318).padding(.bottom, 10)
-                                    Stepper {
-                                        Text("\(amp)").font(.system(size: 30))
-                                    } onIncrement: {
-                                        amp += 1
-                                        
-                                    } onDecrement: {
-                                        if (amp > 0) {
-                                            amp -= 1
+                                    Image(blueAmp).resizable().frame(width:218, height: 218).padding(.bottom, 10)
+                                    VStack{
+                                        Text("\(amp)").font(.system(size:30)).fontWeight(.bold).padding(15)
+                                        HStack{
+                                            HStack{
+                                                Text("-").foregroundColor(.white).font(.system(size:50)).padding(20).padding(.leading, 100).padding(.trailing, 100)
+                                            }.background(Color.red).border(.black).contentShape(Rectangle()).onTapGesture {
+                                                if (amp > 0){
+                                                    amp -= 1;
+                                                }
+                                            }
+                                            HStack{
+                                                Text("+").foregroundColor(.white).font(.system(size:50)).padding(20).padding(.leading, 100).padding(.trailing, 100)
+                                            }.background(Color.green).border(.black).contentShape(Rectangle()).onTapGesture {
+                                                amp += 1;
+                                            }
                                         }
-                                    }.frame(width:150)
+                                    }
                                 }
-                                .padding(10)
                             }
                             HStack {
                                 
@@ -118,7 +131,7 @@ struct ContentView: View {
                             
                             Text("TO TELEOP").font(.title).fontWeight(.bold).onTapGesture {
                                 move = false;
-                            }.offset(y:42)
+                            }.offset(y:20)
                         }
                     }
                 }

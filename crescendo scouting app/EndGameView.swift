@@ -86,7 +86,7 @@ struct EndGameView: View {
                             }.offset(y: -300)
                             
                             HStack {
-                                Text("TO NOTES").font(.title).fontWeight(.bold).onTapGesture {
+                                Text("TO COMMENTS").font(.title).fontWeight(.bold).onTapGesture {
                                     progref = false;
                                 }
                             }.offset(y:-240)
