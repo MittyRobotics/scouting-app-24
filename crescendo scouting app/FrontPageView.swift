@@ -21,7 +21,7 @@ struct FrontPageView: View {
     @State public var middle = false;
     @State public var teleopSpeaker = 0;
     @State public var teleopAmp = 0
-    @State public var selection = "Parked";
+    @State public var selection = "None";
     @State public var trap = false;
     @State public var harmony = false;
     @State public var pens = 0;

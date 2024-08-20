@@ -34,7 +34,7 @@ struct EndGameView: View {
     
     
     
-    let positions = ["Parked", "Onstage", "None"];
+    let positions = ["None", "Parked", "Onstage"];
     
     var body: some View {
         //update loop reference
@@ -70,12 +70,14 @@ struct EndGameView: View {
                             HStack{
                                 VStack(spacing:20) {
                                     VStack{
+                                        
                                         Picker("Select position", selection: $selection){
                                             ForEach(positions, id: \.self){
-                                                Text($0).font(.system(size: 18))
+                                                Text($0).font(.largeTitle)
                                             }
                                         }
                                         .pickerStyle(.menu)
+                                        
                                         
                                         Text("Selected position: \(selection)").font(.system(size: 20))
                                         

@@ -58,13 +58,13 @@ struct ExportView: View {
 
     var tt: String{
         get{
-            return "YOURNAME: " + userName + "\nTEAMNUM: " + teamNum + "\nMATCHNUM_TEAMNUM: " + matchnum + "_" + teamNum + "\nMATCHNUM: " + matchnum + "\nMOBILITY: " + String(mobile) + "\nDEFENDING: " + String(defending) + "\nSTARTINGPOS: " + startingPosition + "\nAUTONSPEAKER: " + String(value) + "\nAUTONAMP: " + String(amp) + "\nCENTERRING: " + String(middle) + "\nTELEOPSPEAKER: " + String(teleopSpeaker) + "\nTELEOPAMP: " + String(teleopAmp) + "\nENDGAME: " + selection + "\nTRAP: " + String(trap) + "\nHARMONY: " + String(harmony) + "\nGROUNDPICKUP: " + String(groundpickup) + "\nFEEDER: " + String(feeder) + "\nPENALTIES: " + String(pens) + "\nTECHPENALTIES: " + String(techPens) + "\nNOTES: " + notes
+            return "YOURNAME: " + userName + "\nTEAMNUM: " + teamNum + "\nMATCHNUM_TEAMNUM: " + matchnum + "_" + teamNum + "\nMATCHNUM: " + matchnum + "\nCOLOR: " + red + "\nMOBILITY: " + String(mobile) + "\nDEFENDING: " + String(defending) + "\nSTARTINGPOS: " + startingPosition + "\nAUTONSPEAKER: " + String(value) + "\nAUTONAMP: " + String(amp) + "\nCENTERRING: " + String(middle) + "\nTELEOPSPEAKER: " + String(teleopSpeaker) + "\nTELEOPAMP: " + String(teleopAmp) + "\nENDGAME: " + selection + "\nTRAP: " + String(trap) + "\nHARMONY: " + String(harmony) + "\nGROUNDPICKUP: " + String(groundpickup) + "\nFEEDER: " + String(feeder) + "\nPENALTIES: " + String(pens) + "\nTECHPENALTIES: " + String(techPens) + "\nNOTES: " + notes
         }
     }
     
     var document: MessageDocument{
         get{
-            return MessageDocument(message: "YOURNAME: " + userName + "\nTEAMNUM: " + teamNum + "\nMATCHNUM_TEAMNUM: " + matchnum + "_" + teamNum + "\nMATCHNUM: " + matchnum + "\nMOBILITY: " + String(mobile) + "\nDEFENDING: " + String(defending) + "\nSTARTINGPOS: " + startingPosition + "\nAUTONSPEAKER: " + String(value) + "\nAUTONAMP: " + String(amp) + "\nCENTERRING: " + String(middle) + "\nTELEOPSPEAKER: " + String(teleopSpeaker) + "\nTELEOPAMP: " + String(teleopAmp) + "\nENDGAME: " + selection + "\nTRAP: " + String(trap) + "\nHARMONY: " + String(harmony) + "\nGROUNDPICKUP: " + String(groundpickup) + "\nFEEDER: " + String(feeder) + "\nPENALTIES: " + String(pens) + "\nTECHPENALTIES: " + String(techPens) + "\nNOTES: " + notes)
+            return MessageDocument(message: "YOURNAME: " + userName + "\nTEAMNUM: " + teamNum + "\nMATCHNUM_TEAMNUM: " + matchnum + "_" + teamNum + "\nMATCHNUM: " + matchnum + "\nCOLOR: " + red + "\nMOBILITY: " + String(mobile) + "\nDEFENDING: " + String(defending) + "\nSTARTINGPOS: " + startingPosition + "\nAUTONSPEAKER: " + String(value) + "\nAUTONAMP: " + String(amp) + "\nCENTERRING: " + String(middle) + "\nTELEOPSPEAKER: " + String(teleopSpeaker) + "\nTELEOPAMP: " + String(teleopAmp) + "\nENDGAME: " + selection + "\nTRAP: " + String(trap) + "\nHARMONY: " + String(harmony) + "\nGROUNDPICKUP: " + String(groundpickup) + "\nFEEDER: " + String(feeder) + "\nPENALTIES: " + String(pens) + "\nTECHPENALTIES: " + String(techPens) + "\nNOTES: " + notes)
         }
     }
     

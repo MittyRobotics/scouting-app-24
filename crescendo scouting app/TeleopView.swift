@@ -101,7 +101,7 @@ struct TeleopView: View {
                             
                             HStack{
                                 VStack{
-                                    Toggle("Picked up from Ground? ", isOn: $groundpickup).frame(width:300).font(.system(size: 22))
+                                    Toggle("Ground Intake ", isOn: $groundpickup).frame(width:200).font(.system(size: 22))
                                 }
                             }.offset(y:-75)
                             
